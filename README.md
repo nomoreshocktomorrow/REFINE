@@ -32,7 +32,7 @@ The model is evaluated on five fixed U.S. equity universes:
 - **Defensive Sector**: 29 names, same period.
 - **NASDAQ Top100**: 100 largest NASDAQ constituents, same period.
 
-Daily VOHLC (Volume, Open, High, Low, Close) data for the four hand-picked universes are sourced from the iFinD financial data terminal.
+Daily VOHLC (Volume, Open, High, Low, Close) data for five universes are sourced from the iFinD financial data terminal.
 
 ## Results
 
