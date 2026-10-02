@@ -32,7 +32,7 @@ The model is evaluated on five fixed U.S. equity universes:
 - **Defensive Sector**: 29 names, same period.
 - **NASDAQ Top100**: 100 largest NASDAQ constituents, same period.
 
-Daily VOHLC (Volume, Open, High, Low, Close) data for the four hand-picked universes are sourced from **Yahoo Finance** and aligned to monthly decision points. The **NASDAQ Top100** universe is sourced from **Stooq** (`nasdaq100_stooq_dsl.csv`). All features are computed solely from information observable strictly before each decision time.
+Daily VOHLC (Volume, Open, High, Low, Close) data for the four hand-picked universes are sourced from the iFinD financial data terminal.
 
 ## Results
 
@@ -40,8 +40,8 @@ REFINE outperforms classical allocation rules, prediction-focused learning metho
 
 The curated package provides the main result artifacts:
 
-- `results/UPDL/`: fused final portfolio weights named `Dataset__final.pkl` / `.csv`.
+- `results/Final/`: fused final portfolio weights named `Dataset__final.pkl` / `.csv`.
 - `results/Phase I/`: first-round expert weights named `Dataset_Objective_Model_PhaseI.pkl`.
 - `results/Phase II/`: retrospective (second-round) expert weights named `Dataset_Objective_Model_PhaseII.pkl`.
 
-To reproduce the main pipeline, install dependencies with `pip install -r requirements.txt`, generate teacher targets via `portfolio_optimization.py`, train experts via `experiment_retrospective.py`, and run the fusion via `scripts/run_expert_feature_boa.py` with the `final_202505_revcmp3` preset. The Mamba backbone requires `mamba_ssm==1.2.0.post1`, which is typically available on Linux/CUDA environments.
+
