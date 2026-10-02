@@ -1,0 +1,4 @@
+torch==2.0.1+cu117
+numpy==1.24.3
+pandas==2.0.3
+tqdm==4.66.2
